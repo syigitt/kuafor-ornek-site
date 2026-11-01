@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Usta Makas Erkek Kuaförü – İstanbul</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#f6f7fa; --surface:#ffffff; --ink:#14203b; --muted:#56607a;
+  --red:#c8102e; --line:#dfe3ec; --wa:#128c4a; --wa-ink:#ffffff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1628; --surface:#18213a; --ink:#eef1f8; --muted:#a3adc6;
+    --red:#ff5a73; --line:#2a3555; --wa:#25b866; --wa-ink:#06210f;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1628; --surface:#18213a; --ink:#eef1f8; --muted:#a3adc6;
+  --red:#ff5a73; --line:#2a3555; --wa:#25b866; --wa-ink:#06210f;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;padding-bottom:90px}
+h1,h2{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.05;margin:0}
+.pole{height:14px;background:repeating-linear-gradient(135deg,var(--red) 0 14px,#fff 14px 28px,#1f4fb4 28px 42px,#fff 42px 56px)}
+main{max-width:640px;margin:0 auto;padding:0 22px}
+header{padding:44px 0 36px}
+h1{font-size:clamp(2.6rem,11vw,4.2rem);font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:16px 0 26px;max-width:34ch}
+.btn{display:inline-block;background:var(--wa);color:var(--wa-ink);font-weight:600;text-decoration:none;padding:14px 22px;border-radius:10px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+section{padding:30px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;font-weight:600;margin-bottom:16px}
+.prices{list-style:none;margin:0;padding:0}
+.prices li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.prices li:last-child{border-bottom:0}
+.prices b{font-weight:600}
+.prices span{font-weight:600;white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-size:.9rem}
+table{width:100%;border-collapse:collapse}
+td{padding:9px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:600}
+.map{display:inline-block;margin-top:12px;color:var(--red);font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gallery div{aspect-ratio:1;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;color:var(--muted);font-size:.8rem;text-align:center;padding:6px}
+.gallery div{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px}
+.gallery svg{width:50%;color:var(--ink)}
+.gallery .st{stroke:var(--red)}
+footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+.fab{position:fixed;left:16px;right:16px;bottom:0;max-width:608px;margin:0 auto 16px;padding:15px;text-align:center;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.25);margin-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+</style>
+</head>
+<body>
+<div class="pole" aria-hidden="true"></div>
+<main>
+  <header>
+    <h1>Usta Makas Erkek Kuaförü</h1>
+    <p class="lead">İstanbul’da 15 yıldır saç ve sakal. Randevu için WhatsApp’tan yazmanız yeterli.</p>
+    <a class="btn" href="https://wa.me/905XXXXXXXXX?text=Merhaba, randevu almak istiyorum">WhatsApp’tan randevu al</a>
+  </header>
+
+  <section id="fiyatlar">
+    <h2>Fiyat listesi</h2>
+    <ul class="prices">
+      <li><div><b>Saç kesimi</b><small>Yıkama ve şekillendirme dahil</small></div><span>350 ₺</span></li>
+      <li><div><b>Sakal tıraşı</b><small>Sıcak havlu ile</small></div><span>200 ₺</span></li>
+      <li><div><b>Saç + sakal</b></div><span>500 ₺</span></li>
+      <li><div><b>Çocuk tıraşı</b><small>12 yaş altı</small></div><span>250 ₺</span></li>
+      <li><div><b>Cilt bakımı</b></div><span>300 ₺</span></li>
+    </ul>
+  </section>
+
+  <section id="galeri">
+    <h2>Çalışmalarımız</h2>
+    <div class="gallery">
+      <!-- Gerçek müşteride her kutuyu <img src="foto1.jpg" alt="..." style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px"> ile değiştir -->
+      <div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="48" r="8"/><circle cx="46" cy="48" r="8"/><path d="M23 42L44 8M41 42L20 8"/></svg>Saç kesimi</div>
+      <div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="6" y="14" width="52" height="14" rx="4"/><path d="M12 28v22M20 28v22M28 28v22M36 28v22M44 28v22M52 28v22"/></svg>Sakal tıraşı</div>
+      <div><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="24" y="6" width="16" height="52" rx="8"/><path class="st" d="M24 20l16-8M24 34l16-8M24 48l16-8"/></svg>Bakım</div>
+    </div>
+  </section>
+
+  <section id="saatler">
+    <h2>Çalışma saatleri</h2>
+    <table>
+      <tr><td>Pazartesi – Cumartesi</td><td>09.00 – 20.00</td></tr>
+      <tr><td>Pazar</td><td>10.00 – 17.00</td></tr>
+    </table>
+  </section>
+
+  <section id="konum">
+    <h2>Konum</h2>
+    <p>Merkez Mah. Örnek Sok. No: 12<br>İstanbul</p>
+    <a class="map" href="https://maps.google.com/?q=İstanbul">Google Haritalar’da aç</a>
+  </section>
+
+  <footer>Bu sayfa örnek çalışmadır. İşletme adı, fiyatlar ve adres kurgusaldır.</footer>
+</main>
+<a class="btn fab" href="https://wa.me/905XXXXXXXXX?text=Merhaba, randevu almak istiyorum">WhatsApp’tan yaz</a>
+</body>
+</html>
